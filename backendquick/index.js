@@ -5,7 +5,8 @@ import cors from 'cors'
 const app=express();
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3000"
+    origin: "http://localhost:3000",
+    "https://quick-score.netlify.app"
 }))
 app.post('/MarkCheck',async(req,res)=>{
     try{
